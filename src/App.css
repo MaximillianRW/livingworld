@@ -1,0 +1,33 @@
+:root {
+  --P1: #E7BE87;
+  --P2: #B97239;
+  --P3: #723728;
+  --P4: #2a0404;
+  --leatherboots5: #918c65;
+
+  --magicblue: #3dd1f5;
+  --magicpink: #d474e0;
+  --magicgreen: #60ec72;
+
+  --logo1: #7dc6c7;
+  --logo2: #5F88C2;
+  --logo3: #2E445F;
+  --logo4: #1C3256;
+  --logo5: #C9CACA;
+  --logodeep: #0A1F4C;
+
+}
+
+.App-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 0;
+  min-width: 100%;
+  background-color: var(--PathfinderP3);
+  overflow-y: auto;
+}
+
+.App-container-link {
+  color: var(--leatherboots5);
+}

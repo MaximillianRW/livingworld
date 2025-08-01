@@ -1,0 +1,208 @@
+:root {
+    --sheet-grid:
+        "name name name"
+        "image traits traits"
+        "image concept concept"
+        "image concept concept"
+        "abilities abilities abilities"
+        "abilities abilities abilities"
+        "abilities abilities abilities"
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.page-character-creation {
+    position: relative;
+    width: 80%;
+    height: 200vh;
+    display: flex;
+    background-color: var(--leatherboots1);
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--leatherboots5);
+    border-radius: 1em;
+    padding: 2em;
+    text-align: center;
+}
+
+.logo {
+    z-index: 90;
+    width: 50%;
+    margin: 1em auto;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-character-creation {
+    position: relative;
+    /* Mude de absolute para relative */
+    top: 0;
+    left: auto;
+    transform: none;
+    width: 80%;
+    max-width: 60em;
+    margin: 1em auto;
+    /* Centraliza o formulário */
+    background-color: var(--leatherboots2);
+    padding: 2em;
+    border: 3px solid var(--leatherboots5);
+    border-radius: 1em;
+    min-height: 30em;
+    /* Altura mínima */
+    overflow: visible;
+    /* Permite que conteúdo interno seja visível */
+}
+
+.form-character-creation-title {
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--leatherboots1);
+    font-weight: bolder;
+    margin-bottom: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    /*-webkit-text-stroke: 0.5px var(--leatherboots3);*/
+}
+
+.form-character-creation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "name name name"
+        "image traits traits"
+        "image concept concept"
+        "image concept concept"
+        "abilities abilities abilities"
+        "abilities abilities abilities"
+        "abilities abilities abilities";
+    gap: 1em;
+}
+
+.form-character-creation-name,
+.form-character-creation-image,
+.form-character-creation-traits,
+.form-character-creation-concept,
+.form-character-creation-abilities
+ {
+    min-width: 300px;
+    /* Largura mínima antes de quebrar */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ajuste para 100% ou conforme necessário */
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid var(--leatherboots4);
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.form-character-creation-name {
+    grid-area: name;
+    grid-column: 1 / -1;
+    /* Ocupa toda a largura */
+}
+
+.form-character-creation-traits {
+    grid-area: traits;
+    grid-column: 2 /span 2;
+    /* Ocupa duas colunas */
+}
+
+.form-character-creation-image {
+    grid-area: image;
+    grid-row: 2 /span 3;
+    height: 100%;
+}
+
+.form-character-creation-concept {
+    grid-area: concept;
+    grid-column: 2 /span 2;
+    /* Ocupa duas colunas */
+    ;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.form-character-creation-abilities {
+    grid-area: abilities;
+    grid-column: 1 / -1;
+    grid-row: 5 / span 3;
+}
+
+.form-character-creation-internal-column {
+    width: 100%;
+}
+
+.form-character-creation-content label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--leatherboots1);
+    width: 100%;
+    text-align: left;
+    font-weight: 1000;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /*-webkit-text-stroke: 0.1px var(--leatherboots4);*/
+    font-size: 1.5em;
+}
+
+.form-character-creation-content input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 2px solid var(--leatherboots4);
+    border-radius: 0.5em;
+    background-color: var(--leatherboots1);
+    color: var(--leatherboots4);
+    margin: 0 auto 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.form-character-creation-content select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 2px solid var(--leatherboots4);
+    border-radius: 0.5em;
+    background-color: var(--leatherboots1);
+    color: var(--leatherboots4);
+    margin: 0 auto 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    appearance: none;
+}
+
+.form-actions{
+    text-align: right;
+}
+
+.form-actions button {
+    width: 25%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 2px solid var(--leatherboots5);
+    border-radius: 0.5em;
+    background-color: var(--leatherboots4);
+    color: var(--leatherboots5);
+    margin: 0 auto 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.form-actions button:last-child{
+    border: 2px solid var(--leatherboots4);
+    background-color: var(--leatherboots5);
+    color: var(--leatherboots4);
+}

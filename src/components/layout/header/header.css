@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: var(--logodeep);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 7.5vh;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between; /* Distribui os itens igualmente */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  overflow-y: hidden;
+  display: flex;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header > *{
+  margin: 0 !important;
+  flex: 1;
+}
+
+.header a{
+  color: var(--magicblue);
+  margin-right: 2rem; /* Use unidades fixas em vez de vw */
+  text-decoration: solid;
+  cursor: pointer;
+}
+
+.header a:hover{
+  color: var(--magicpink);
+}
+
+.logo{
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.project-name{
+  color: var(--logo5);
+  align-self: left;
+  font-size: larger;
+  font-weight: bold;
+}

@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+.contact{
+    display: block;
+    flex: 1;
+    width: 100%;
+    min-height: 40vh;
+    background-color: var(--logo4);
+    color: var(--logo5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.contact-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "means support source";
+}
+
+.contact-body img{
+    height: 4em;
+    width: auto;
+}
+
+.contact-means,
+.contact-support,
+.contact-source{
+    text-align: center;
+    display: flex; /* Adicionado para alinhar verticalmente */
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.contact-means{
+    grid-area: means;
+}
+.contact-means h1{
+    color: var(--magicpink)
+}
+
+.contact-support{
+    grid-area: support;
+}
+
+.contact-support h1{
+    color: var(--magicgreen)
+}
+
+.contact-source{
+    grid-area: source;
+}
+.contact-source h1{
+    color: var(--magicblue)
+}

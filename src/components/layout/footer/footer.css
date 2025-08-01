@@ -1,0 +1,54 @@
+.footer {
+  background-color: var(--P3);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  height: 5vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--P1);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer p{
+  margin: 0 auto;
+}
+
+.footer-link {
+  color: var(--leatherboots1);
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: var(--leatherboots5);
+  text-decoration: underline;
+}
+
+.Plogo {
+  position: absolute;
+  left: 7.5vw;
+  width: 2em;
+  height: auto;
+}
+
+.paizo-cup {
+    position: absolute;
+    top: 0em;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 0.75em;
+    color: var(--leatherboots1);
+    text-align: center;
+}
+
+.paizo-cup a {
+  color: var(--leatherboots1);
+  text-decoration: underline;
+}
+
+.paizo-cup a:hover {
+  color: var(--leatherboots5);
+  text-decoration: underline;
+}
