@@ -6,7 +6,7 @@
     display: block;
     flex: 1;
     width: 100%;
-    min-height: 30vh;
+    min-height: 25vh;
     background-color: var(--logo4);
     color: var(--logo5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
