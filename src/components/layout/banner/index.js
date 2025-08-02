@@ -76,20 +76,17 @@ const Banner = () => {
                 "--banner-animation-duration2": `${ANIMATION_DURATION/2}ms` }}
         >
             {carouselImgIndex[0] !== null && images.length > 0 && (
-                <div className="Banner-img0">
                     <img
+                        className="Banner-img0"
                         src={carousel[carouselImgIndex[0]]}
                         alt={`Banner ${carousel[carouselImgIndex[0]]}`}
                     />
-                </div>
             )}
             {carouselImgIndex[1] !== null && images.length > 0 && (
-                <div className="Banner-img1">
-                    <img
+                    <img className="Banner-img1"
                         src={carousel[carouselImgIndex[1]]}
                         alt={`Banner ${carousel[carouselImgIndex[1]]}`}
                     />
-                </div>
             )}
         <widgets.Logo className='Banner-title' imagem='/imagens/Title.png'/>
         {/*<widgets.Subtitle />*/}

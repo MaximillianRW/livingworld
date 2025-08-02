@@ -6,11 +6,12 @@
     display: block;
     flex: 1;
     width: 100%;
-    min-height: 40vh;
+    min-height: 30vh;
     background-color: var(--logo4);
     color: var(--logo5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
+    margin-bottom: calc(-0.004348*100vw+13.34vh);
 }
 
 .contact-body{
