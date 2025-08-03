@@ -7,7 +7,7 @@ const Header = () => {
         <div className='header'>
             <img className="logo" src="/LWlogo.png"/>
             <PROJECT_NAME className="project-name"/>
-            <div className="about-link"><Link to="about" smooth={true} duration={2000} className="about-link">About</Link></div>
+            <div><Link to="about" smooth={true} duration={2000}>About</Link></div>
         </div>
     );
 };

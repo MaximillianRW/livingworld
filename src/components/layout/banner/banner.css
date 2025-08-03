@@ -2,9 +2,8 @@
   position: relative;
   top: 0;
   left: 0;
-  margin-top: 4em;
-  width: 100vw;
-  height: calc(89.66vh - 0.004348*100vw);
+  width: 100%;
+  height: 87.5vh;
   display: block;
   background-color: whitesmoke;
   overflow: hidden;

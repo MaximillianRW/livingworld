@@ -15,25 +15,37 @@
   --logo4: #1C3256;
   --logo5: #C9CACA;
   --logodeep: #0A1F4C;
-
 }
 
 .App-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: auto;
+  min-width: 100vw;
   z-index: 0;
-  min-width: 100%;
-  background-color: var(--PathfinderP3);
-  overflow-y: auto;
+  background-color: whitesmoke;
+}
+
+.header{
+  flex: 1 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 999;
 }
 
 .App-content{
   flex: 1 0 auto;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .footer{
-  flex-shrink: 0;
+  flex: 1 0 auto;
   position: fixed;
   bottom: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 999;
 }

@@ -4,12 +4,6 @@
 
 .header {
   background-color: var(--logodeep);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  height: 4em;
-  width: 100%;
   align-items: center;
   text-align: center;
   justify-content: space-between; /* Distribui os itens igualmente */
@@ -37,8 +31,7 @@
 
 .logo{
   position: relative;
-  height: 100%;
-  max-height: 100%;
+  max-height: 7.5vh;
   width: auto;
   object-fit: contain;
 }
