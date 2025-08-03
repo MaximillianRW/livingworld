@@ -5,9 +5,11 @@ function App() {
   return (
     <div className='App-container'>
         <layout.Header />
-        <layout.Banner />
-        <layout.About />
-        <layout.Contact />
+        <div className='App-content'>
+          <layout.Banner />
+          <layout.About />
+          <layout.Contact />
+        </div>
         <layout.Footer />
     </div>
 

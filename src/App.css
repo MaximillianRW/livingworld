@@ -28,6 +28,12 @@
   overflow-y: auto;
 }
 
-.App-container-link {
-  color: var(--leatherboots5);
+.App-content{
+  flex: 1 0 auto;
+}
+
+.footer{
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
 }
