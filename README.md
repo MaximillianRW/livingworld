@@ -41,10 +41,8 @@ Each milestone in the roadmap is being thought to make it an entire functional g
 As the project progress a game will be instantied as a continuous playtest in which everyone will be able to participate, with number of simultaneous accesses just limited by the server I will be able to pay at the time.
 
 
-## Contact
-### [Project Discord Server](https://discord.gg/W5zD5jdWtT)
+### [Contact] (https://discord.gg/W5zD5jdWtT)
 
-## Donations
 ### [Patreon](https://www.patreon.com/c/MaxRW)
 
 
