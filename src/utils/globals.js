@@ -1,7 +1,7 @@
-export const PROJECT_NAME_TEXT = "Living World Project";
+export const PROJECT_NAME_TEXT = "Living World";
 
 export const PROJECT_NAME = ({ className }) =>{ return (
-    <div className={className}>Living World Project</div>
+    <div className={className}>Living World</div>
 ) };
 
 export const PAIZO_CUP = ({className}) => { return (
