@@ -1,9 +1,8 @@
-.Banner {
+.banner {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 87.5vh;
   display: block;
   background-color: whitesmoke;
   overflow: hidden;
@@ -12,59 +11,69 @@
   justify-items: center;
 }
 
-.Banner-title {
+.banner-link {
+  display: 'block';
+  overflow: 'hidden';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.banner-title {
   position: absolute;
   top: 40%;
   left: 50%;
   z-index: 90;
 }
 
-.Banner-title img {
+.banner-title img {
   max-width: 60vw;
   height: auto;
   transform: translate(-50%, -50%);
 }
 
-.Banner-subtitle {
+.banner-subtitle {
   position: absolute;
   top: 60%;
   left: 50%;
   z-index: 90;
 }
 
-.Banner-subtitle img {
+.banner-subtitle img {
   max-width: 90vw;
   height: auto;
   transform: translate(-50%, -50%);
 }
 
-.Banner-img0 {
+.banner-img0,
+.banner-img1 {
   position: absolute;
   top: 0;
-  z-index: 3;
-  width: auto;
-  min-width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.Banner-img1 {
-  position: absolute;
-  top: 0;
+.banner-img0 {
+  z-index: 3;
+}
+
+.banner-img1 {
   z-index: 1;
-  width: auto;
-  min-width: 100vw;
-  height: 90vh;
 }
 
 /* @keyframes duration | easing-function | delay |
 iteration-count | direction | fill-mode | play-state | name */
 @media (prefers-reduced-motion: no-preference) {
-  .Banner-img0 {
+  .banner-img0 {
     animation:
       var(--banner-animation-duration) linear infinite Carousel-fade0;
   }
 
-  .Banner-img1 {
+  .banner-img1 {
     animation:
       var(--banner-animation-duration) linear infinite Carousel-fade1;
   }

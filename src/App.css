@@ -17,6 +17,10 @@
   --logodeep: #0A1F4C;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 .App-container {
   display: flex;
   flex-direction: column;
@@ -38,6 +42,8 @@
 .App-content{
   flex: 1 0 auto;
   overflow-y: auto;
+  padding-top: var(--header-height, 0px);
+  padding-bottom: var(--footer-height, 0px);
   height: 100vh;
 }
 

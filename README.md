@@ -44,7 +44,7 @@ As the project progress a game will be instantied as a continuous playtest in wh
 ### [Project Discord Server](https://discord.gg/W5zD5jdWtT)
 
 ## Donations
-### [Patreon](https://www.patreon.com/posts/living-world-v0-135513057?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)
+### [Patreon](https://www.patreon.com/c/MaxRW)
 
 
 ## Getting Started with Create React App

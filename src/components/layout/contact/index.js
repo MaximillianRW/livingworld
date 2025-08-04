@@ -1,8 +1,11 @@
 import "./contact.css"
 
-const Contact = () => {
+const Contact = (props) => {
     return (
-        <section className="contact">
+        <section
+        id={props.id}
+        className={props.className ?? "contact"}
+        >
             <div className="contact-body">
                 <div className="contact-means">
                     <h1>Contact</h1>
@@ -10,7 +13,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-support">
                     <h1>Support</h1>
-                    <div><a href="https://www.patreon.com/posts/living-world-v0-135513057?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"><img src="/imagens/media/patreon.png"/></a></div>
+                    <div><a href="https://www.patreon.com/c/MaxRW"><img src="/imagens/media/patreon.png"/></a></div>
                 </div>
                 <div className="contact-source">
                     <h1>Source</h1>

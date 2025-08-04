@@ -1,13 +1,17 @@
 import { PROJECT_NAME } from "src/utils/globals.js";
 import "./header.css";
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <div className='header'>
+        <div
+        id={props.id}
+        className={props.className ?? 'header'}
+        >
             <img className="logo" src="/LWlogo.png"/>
             <PROJECT_NAME className="project-name"/>
-            <div><Link to="about" smooth={true} duration={2000}>About</Link></div>
+            <div><HashLink to='#About' smooth={true}>About</HashLink></div>
         </div>
     );
 };

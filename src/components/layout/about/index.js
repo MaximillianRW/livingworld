@@ -1,8 +1,16 @@
 import "./about.css"
 
-const About = () => {
+const About = (props) => {
+
     return (
-        <section id="about" className="about">
+        <section
+            id = {props.id}
+            className={props.className ?? "about"}
+            style={{
+                scrollMarginTop: 'var(--header-height, 0px)',
+                minHeight: 'calc(100vh - var(--header-height, 0px) - var(--footer-height, 0px) - var(--contact-height, 0px))'
+            }}
+        >
             <h1>About</h1>
             <p>This is a work in progress of an automated browser living world framework to be hosted in the cloud.</p>
             <p>This is also a project of dream and passion, intended to be made to, by and for the entire Pathfinder 2e community.</p>
