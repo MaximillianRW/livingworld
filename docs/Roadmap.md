@@ -1,4 +1,6 @@
-# v0.0.1
+# Roadmap
+
+## v0.0.1
 
 - Level 1 Character Creation;
 - 3 Core Ancestries (Human, Elf and Dwarf);
@@ -11,7 +13,7 @@
 - Random Enconter Generator;
 - Simple Combat System;
 
-# v0.0.2
+## v0.0.2
 - Level Up System;
 - Level 4 available Core Classes;
 
