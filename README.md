@@ -30,6 +30,7 @@ I have also some experience with game modding and game architecture, and current
 - Automated settlement development through time, with factions, migrations and government changes;
 - Random events inside and outside settlements;
 - Ability for PCs to found their own settlements;
+- Modular extensions through json to make it easy to add and change items;
 - Anything more that pop up as a necessary feature to make this framework complete.
 
 
