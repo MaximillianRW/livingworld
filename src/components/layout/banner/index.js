@@ -98,23 +98,24 @@ const Banner = (props) => {
                 "--banner-animation-duration2": `${ANIMATION_DURATION / 2}ms`
             }}
         >
-            <HashLink to='#About' smooth={true} className="banner-link"/>
-            {carouselImgIndex[0] !== null && images.length > 0 && (
-                <img
-                    className="banner-img0"
-                    src={carousel[carouselImgIndex[0]]}
-                    alt={`Banner ${carousel[carouselImgIndex[0]]}`}
-                />
-            )}
-            {carouselImgIndex[1] !== null && images.length > 0 && (
-                <img
-                    className="banner-img1"
-                    src={carousel[carouselImgIndex[1]]}
-                    alt={`Banner ${carousel[carouselImgIndex[1]]}`}
-                />
-            )}
-            <widgets.Logo className='banner-title' imagem='/imagens/Title.png' />
-            <widgets.Logo className='banner-subtitle' imagem='/imagens/Subtitlev2-4.png' />
+            <HashLink to='#About' smooth={true} className="banner-link">
+                {carouselImgIndex[0] !== null && images.length > 0 && (
+                    <img
+                        className="banner-img0"
+                        src={carousel[carouselImgIndex[0]]}
+                        alt={`Banner ${carousel[carouselImgIndex[0]]}`}
+                    />
+                )}
+                {carouselImgIndex[1] !== null && images.length > 0 && (
+                    <img
+                        className="banner-img1"
+                        src={carousel[carouselImgIndex[1]]}
+                        alt={`Banner ${carousel[carouselImgIndex[1]]}`}
+                    />
+                )}
+                <widgets.Logo className='banner-title' imagem='/imagens/Title.png' />
+                <widgets.Logo className='banner-subtitle' imagem='/imagens/Subtitlev2-4.png' />
+            </HashLink>
         </div>
     );
 };
